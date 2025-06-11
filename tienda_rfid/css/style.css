@@ -1,0 +1,136 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* NAV principal */
+.menu-principal {
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 80px;
+}
+
+/* Menú principal*/
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu > li {
+    position: relative;
+    color: white;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.menu a:hover {
+    background-color: #34495e;
+}
+
+/* Submenús ocultos*/
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #34495e;
+    list-style: none;
+    min-width: 150px;
+    z-index: 100;
+}
+
+.sub-menu li {
+    display: block;
+    padding: 10px;
+}
+
+.sub-menu li a {
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.sub-menu a:hover{
+    color: #16a085;
+}
+
+.menu > li:hover .sub-menu {
+    display: block;
+}
+
+/* Buscar */
+.buscar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.buscar input {
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+}
+
+.buscar button {
+    padding: 5px 10px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.buscar button:hover {
+    background-color: #16a085;
+}
+
+/*inicia footer*/
+footer{
+    background-color: #2c3e50;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 30px;
+}
+
+
+.info-contacto{
+    display: flex;
+    justify-content: center;
+    justify-content:left;
+    gap:10px;
+}
+
+.enlaces-utiles a {
+    text-decoration: none;
+    color:white;
+}
+
+.enlaces-utiles a:hover{
+    color: #16a085;
+}
+
+
