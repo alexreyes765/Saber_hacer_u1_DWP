@@ -108,7 +108,6 @@ body {
 footer{
     background-color: #2c3e50;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -124,6 +123,7 @@ footer{
     gap:10px;
 }
 
+
 .enlaces-utiles a {
     text-decoration: none;
     color:white;
@@ -133,4 +133,201 @@ footer{
     color: #16a085;
 }
 
+/*Seccion hero*/
+.hero{
+   background-image: url(../img/hero.jpg);
+   background-size: cover;
+   background-position:bottom;
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 700px;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
 
+.opacidad{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44,62,80, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.informacion h1{
+    font-size: 45px;
+}
+.informacion p{
+    font-size: 20px;
+}
+.informacion a{
+    text-decoration: none;
+    display:inline-block;
+    padding: 15px;
+    background-color: #1abc9c;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.informacion a:hover{
+    background-color: #16a085;
+}
+
+/*seccion socios*/
+.socios{
+    padding: 20px;
+    text-align: center;
+}
+
+.socios h1{
+    margin-bottom: 25px;
+}
+
+.socios .socios-logo img{
+    height: 100px;
+    object-fit: contain;
+    filter: grayscale(0.2);
+    transition: transform 0.3s;
+}
+
+.socios .socios-logo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/*background hero reutilizable*/
+.back-hero{
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Pagina inicio de sesion*/
+.formulario{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario legend {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.formulario input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.formulario button {
+    padding: 10px;
+    background-color: #16a085;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: #1abc9c;
+}
+
+/* Enlaces adicionales */
+.extra-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.extra-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.extra-links a:hover {
+    text-decoration: underline;
+}
+
+/*Extras para el formulario de registro*/
+.form-row {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.form-row > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Estilos mapa del sitio*/
+.mapa-sitio {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    color: #333;
+}
+
+.mapa-sitio h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mapa-sitio ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.mapa-sitio ul ul {
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.mapa-sitio ul li {
+    margin-bottom: 8px;
+}
+
+.mapa-sitio ul li a {
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+.mapa-sitio ul li a:hover {
+    text-decoration: underline;
+}
