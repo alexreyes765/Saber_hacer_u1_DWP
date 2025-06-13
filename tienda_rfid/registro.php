@@ -41,7 +41,11 @@
                 </div>
             </div>
 
-            <button type="submit">Registrarse</button>
+            <div class="recaptcha-container">
+                <div class="g-recaptcha" data-sitekey="6LdZBWArAAAAAPHNl4LFtv8sEpSoSzx7XdNwy4Zl"></div>
+            </div>
+
+            <button type="submit" name="submit">Registrarse</button>
 
             <div class="extra-links">
                 <a href="login.php">¿Ya tienes una cuenta? Inicia Sesión</a>

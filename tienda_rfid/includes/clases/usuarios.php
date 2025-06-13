@@ -96,9 +96,7 @@ class Usuario
         if ($stmt->rowCount() === 1) {
             $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
 
-            // Verificar contraseña
             if (password_verify($contrasena, $usuario['password'])) {
-                // Iniciar sesión (puedes usar session_start() fuera de la clase)
                 session_start();
                 $_SESSION['usuario_id'] = $usuario['id'];
                 $_SESSION['nombre'] = $usuario['nombre'];

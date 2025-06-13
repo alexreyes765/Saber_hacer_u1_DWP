@@ -6,6 +6,7 @@
     <title>ITS RFID</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/itsrfid_logo.png">
+    <script src="https://google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <nav class="menu-principal">
@@ -22,6 +23,7 @@
                     <li> <a href="#">Lectores fijos</a> </li>
                     <li> <a href="#">Lectores de mano</a> </li>
                     <li> <a href="#">Tarjetas</a> </li>
+                    <li> <a href="registrar_producto.php">Nuevo producto</a>
                 </ul>
             </li>
             <li> <a href="#">Nosotros</a> </li>
@@ -34,7 +36,7 @@
                     <li> <a href="registro.php">Registrase</a> </li>
                 </ul>
             </li>
-            <li> <a href="#">Mapa del sitio</a> </li>
+            <li> <a href="mapa.php">Mapa del sitio</a> </li>
         </ul>
         <div class="buscar">
             <input type="text">
